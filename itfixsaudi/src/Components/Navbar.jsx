@@ -19,6 +19,7 @@ export default function Navbar(props) {
             <>
              <a href="/login">Log In</a>
              <a href="/register"> Get Started</a>
+             <a href="/order">Order</a>
              </>
              :
              <>

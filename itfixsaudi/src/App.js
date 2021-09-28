@@ -7,6 +7,9 @@ import Navbar from "./Components/Navbar";
 import CustomerRegister from "./Components/Registration/CustomerRegistration/CustomerRegister";
 import Register from "./Components/Registration/Register";
 import TechRegister from "./Components/Registration/TechRegistratoin/TechRegister";
+import Order from "./Components/Order/Order";
+import OrderNew from "./Components/Order/OrderNew";
+
 import {decodeToken, isExpired} from "react-jwt"
 
 function App() {
@@ -46,6 +49,9 @@ function App() {
       <Route exact path="/register" component={Register} />
       <Route exact path="/Register/Customer" component={CustomerRegister} />
       <Route exact path="/Register/Technician" component={TechRegister} />
+
+      <Route exact path="/Order" component={Order} />
+      <Route exact path="/Order/New" render={ () => <OrderNew OrderNew={OrderNew} />} />
       
       </Switch>
       </BrowserRouter>
